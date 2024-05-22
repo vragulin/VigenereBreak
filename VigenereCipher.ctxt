@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=VigenereCipher
+comment1.params=key
+comment1.target=VigenereCipher(int[])
+comment2.params=key
+comment2.target=VigenereCipher(java.lang.String)
+comment3.params=input
+comment3.target=int[]\ keyCode(java.lang.String)
+comment3.text=\r\n\ Helper\ function\ to\ create\ key\ integer\ array\ from\ string.\r\n\ @param\ \ \ \ \ input\ \ \ \ key\ string\r\n\ @return\ \ \ \ integer\ array\ representing\ key\ string\r\n
+comment4.params=input
+comment4.target=java.lang.String\ encrypt(java.lang.String)
+comment5.params=input
+comment5.target=java.lang.String\ decrypt(java.lang.String)
+comment6.params=
+comment6.target=java.lang.String\ toString()
+numComments=7

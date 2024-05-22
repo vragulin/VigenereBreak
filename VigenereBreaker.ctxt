@@ -1,0 +1,35 @@
+#BlueJ class context
+comment0.target=VigenereBreaker
+comment1.params=
+comment1.target=VigenereBreaker()
+comment10.params=dict
+comment10.target=char\ mostCommonCharIn(java.util.HashSet)
+comment10.text=\r\n\ This\ method\ should\ find\ out\ which\ character,\ of\ the\ letters\ in\ the\ English\ alphabet,\r\n\ appears\ most\ often\ in\ the\ words\ in\ a\ dictionary.\r\n
+comment11.params=encrypted
+comment11.target=void\ breakForAllLangs(java.lang.String)
+comment12.params=
+comment12.target=void\ breakVigenere()
+comment12.text=\r\n\ Decrypt\ and\ print\ selected\ file\r\n\ \ \ \ \r\n\ Assignment\ 1\:\r\n\ \ \ \ public\ void\ breakVigenere()\ {\r\n\ \ \ \ \ \ \ FileResource\ fr\ \=\ new\ FileResource();\r\n\ \ \ \ \ \ \ String\ s\ \=\ fr.asString();\r\n\ \ \ \ \ \ \ int[]\ key\ \=\ tryKeyLength(s,\ 4,\ 'e');\r\n\ \ \ \ \ \ \ VigenereCipher\ vc\ \=\ new\ VigenereCipher(key);\r\n\ \ \ \ \ \ \ String\ msg\ \=\ vc.decrypt(s);\r\n\ \ \ \ \ \ \ print(msg);\r\n\ \ \ \ \ \ \ print("Key\:"\ +\ translateKey(key));\r\n\ \ \ \ \ \ \ for(int\ i\=0;\ i<key.length;\ i++)\ print(key[i]+1);\r\n\ \ \ \ }\ \r\n\ \ \ \ \r\n\ Assignment\ 2\:\r\n\ \ \ \ public\ void\ breakVigenere\ ()\ {\r\n\ \ \ \ \ \ \ String\ input\ \=\ new\ FileResource().asString();\r\n\ \ \ \ \ \ \ String\ langName\ \=\ "English";\r\n\ \ \ \ \ \ \ HashSet<String>\ dict\ \=\ dicts.get(langName);\r\n\ \ \ \ \ \ \ String\ dec\ \=\ breakForLanguage(input,\ langName);\r\n\ \ \ \ \ \ \ print(dec);\r\n\ \ \ \ \ \ \ print("\\nTrying\ with\ key\ length\ 38");\r\n\ \ \ \ \ \ \ int[]\ foundKey\ \=\ tryKeyLength(input,\ 38,\ 'e');\r\n\ \ \ \ \ \ \ VigenereCipher\ vc\ \=\ new\ VigenereCipher(foundKey);\r\n\ \ \ \ \ \ \ print("Decrypted\ word\ count\:");\r\n\ \ \ \ \ \ \ print(countWords(vc.decrypt(input),\ dict));\r\n\ \ \ \ }\ \r\n\ \ \ \ \r\n\ \ Final\ Assignment\:\r\n
+comment2.params=lang
+comment2.target=void\ readDict(java.lang.String)
+comment3.params=t
+comment3.target=void\ print(java.lang.Object)
+comment4.params=message\ whichSlice\ totalSlices
+comment4.target=java.lang.String\ sliceString(java.lang.String,\ int,\ int)
+comment4.text=\r\n\ This\ method\ clices\ string\ and\ returns\ one\ slice\ for\ further\ prcessing\r\n
+comment5.params=encrypted\ klength\ mostCommon
+comment5.target=int[]\ tryKeyLength(java.lang.String,\ int,\ char)
+comment5.text=\r\n\ Method\ for\ extracting\ key\ from\ encrypted\ input\r\n
+comment6.params=key
+comment6.target=java.lang.String\ translateKey(int[])
+comment6.text=\r\n\ Translates\ integer\ array\ key\ to\ string\ representation.\r\n
+comment7.params=fr
+comment7.target=java.util.HashSet\ readDictionary(edu.duke.FileResource)
+comment7.text=\r\n\ Method\ for\ reading\ dictionary\ from\ a\ file\r\n
+comment8.params=message\ dict
+comment8.target=int\ countWords(java.lang.String,\ java.util.HashSet)
+comment8.text=\r\n\ Count\ how\ many\ words\ in\ a\ message\ are\ from\ a\ dictionary\r\n
+comment9.params=encrypted\ langName
+comment9.target=java.lang.String\ breakForLanguage(java.lang.String,\ java.lang.String)
+comment9.text=\r\n\ Decrypt\ cipher\ for\ keys\ in\ range\ 1-100,\ based\ on\ dictionary\ provided\r\n
+numComments=13
